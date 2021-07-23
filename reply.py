@@ -28,3 +28,18 @@ sum_len = 0
 for d in reply:
 	sum_len += len(d) # sum_len = sum_len + len(d)
 print('平均留言長度', sum_len / len(reply))
+
+#清單篩選
+new = []
+for d in reply:#把reply 的每一個東西一個一個叫出來(forloop)
+    if len(d) < 100:
+    	new.append(d)
+print('共有', len(new), '筆留言小於100個字母')
+print(new[0])
+
+word = []
+for d in reply:
+    if 'good' in d:
+        word.append(d)
+print(len(word))
+print(word[0])
