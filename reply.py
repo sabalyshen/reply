@@ -54,3 +54,6 @@ print('共有', len(b), '筆資料')
 整段註解結束 """ 
 bad = [b for b in reply if 'bad' in b]
 #output = [(number-1運算) for number變數 in reference清單 if number % 2 == 0 篩選條件 ]
+
+bad = ['bad' in d for d in reply]
+print(bad)
